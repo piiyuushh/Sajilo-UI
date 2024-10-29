@@ -19,7 +19,7 @@ const Components = () => {
           <li key={component.id} className="relative group">
             <a
               href={`/component/${component.id}`}
-              className="p-6 border dark:border-[#252525] border-[#EBEBEB] rounded-lg  transition-all duration-150 hover:shadow-md shadow-slate-50 dark:shadow-slate-900 bg-gray-50 dark:bg-[#0A0A0A] flex flex-col justify-between h-full"
+              className="p-6 border dark:border-[#252525] border-[#EBEBEB] rounded-lg  transition-all duration-150 hover:shadow-md shadow-slate-50 dark:shadow-slate-900 bg-[#FAFAFA] dark:bg-[#0A0A0A] flex flex-col justify-between h-full"
             >
               <h3 className="text-2xl font-semibold mb-2">{component.title}</h3>
               <p className="text-lg mb-4">{component.description}</p>
