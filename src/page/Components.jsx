@@ -3,9 +3,9 @@ import componentsData from "../data/components.json";
 const Breadcrumb = () => {
   return (
     <nav className="flex items-center mb-4" aria-label="Breadcrumb">
-      <ol className="list-none p-0 flex">
+      <ol className="list-none p-0 flex text-gray-500 dark:text-gray-400">
         <li>
-          <a href="/" className="text-black dark:text-white">
+          <a href="/" >
             Home
           </a>
         </li>

@@ -53,16 +53,16 @@ const ComponentPage = () => {
 
   const Breadcrumb = () => (
     <nav className="flex items-center mb-4" aria-label="Breadcrumb">
-      <ol className="list-none p-0 flex">
+      <ol className="list-none p-0 flex text-gray-500 dark:text-gray-400">
         <li>
-          <a href="/" className="text-gray-500 dark:text-gray-400">Home</a>
+          <a href="/">Home</a>
         </li>
         <li className="mx-2">/</li>
         <li>
-          <a href="/components" className="text-gray-500 dark:text-gray-400">Components</a>
+          <a href="/components">Components</a>
         </li>
         <li className="mx-2">/</li>
-        <li className="text-gray-500 dark:text-gray-400">{components[0].id}</li>
+        <li >{components[0].id}</li>
       </ol>
     </nav>
   );
@@ -84,7 +84,7 @@ const ComponentPage = () => {
             >
               {copiedStates[component.id] ? "Copied!" : "Copy Code"}
             </button>
-            <pre className="bg-[#FAFAFA] my-3 max-w-[90vw] md:max-w-6xl dark:bg-[#0A0A0A] border dark:border-[#252525] border-[#EBEBEB] p-4 rounded-lg overflow-x-auto">
+            <pre className="bg-[#FAFAFA] dark:text-slate-300 my-3 max-w-[90vw] md:max-w-6xl dark:bg-[#0A0A0A] border dark:border-[#252525] border-[#EBEBEB] p-4 rounded-lg overflow-x-auto">
               <code>{component.code}</code>
             </pre>
           </div>
