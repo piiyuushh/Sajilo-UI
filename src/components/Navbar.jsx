@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaBars, FaTimes } from "react-icons/fa"; // Import the menu icons
 import ThemeToggler from "./ThemeToggler"; // Import the Theme Toggler
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
     { name: "About", path: "/about" },
     {
       name: "",
-      path: "https://github.com/yourusername/sajiloui",
+      path: "https://github.com/smrn001/Sajilo-UI",
       external: true,
       icon: <FaGithub />,
     },
@@ -24,7 +24,9 @@ const Navbar = () => {
     const handleKeyDown = (event) => {
       if ((event.metaKey || event.ctrlKey) && event.key === "k") {
         event.preventDefault();
-        searchInputRef.current.focus();
+        if (searchInputRef.current) {
+          searchInputRef.current.focus();
+        }
       }
     };
 
@@ -35,7 +37,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="bg-white dark:bg-[#0A0A0A] shadow-md boder-b ">
+    <header className="bg-[#FAFAFA] dark:bg-[#0A0A0A] dark:border-[#252525] border-[#EBEBEB] border-b">
       <nav className="container mx-auto flex justify-between items-center px-4 py-4">
         <Link
           to="/"
@@ -52,7 +54,7 @@ const Navbar = () => {
                 href={link.path}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-500 dark:hover:text-blue-400"
+                className="flex items-center text-gray-700 dark:text-gray-300 font-semibold hover:text-gray-900 dark:hover:text-gray-400"
               >
                 {link.icon}
                 <span className="ml-1">{link.name}</span>
@@ -61,32 +63,40 @@ const Navbar = () => {
               <Link
                 key={index}
                 to={link.path}
-                className="text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-500 dark:hover:text-blue-400"
+                className="text-gray-700 dark:text-gray-300 font-semibold hover:text-gray-900 dark:hover:text-gray-400"
               >
                 {link.name}
               </Link>
             )
           )}
-          <ThemeToggler />
-
-          {/* Search Input */}
+          <div className="flex items-center space-x-2 ml-4">
+            <ThemeToggler />
+            <button
+              className="md:hidden text-gray-700 dark:text-gray-300"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? <FaTimes /> : <FaBars />} {/* Menu icon */}
+            </button>
+          </div>
           <input
             ref={searchInputRef}
             type="text"
-            placeholder="  Search components..."
+            placeholder="Search components..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="ml-4 p-1 border border-gray-300 rounded-xl focus:outline-none focus:ring focus:ring-blue-500 dark:border-gray-600 dark:bg-[#0A0A0A] dark:text-white"
+            className="ml-4 p-1 border border-gray-300 rounded-xl focus:outline-none focus:ring focus:ring-gray-500 dark:border-gray-600 dark:bg-[#0A0A0A] dark:text-white"
           />
-          {/* Theme Toggler */}
         </div>
 
-        <button
-          className="md:hidden text-gray-700 dark:text-gray-300"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? "Close" : "Menu"}
-        </button>
+        <div className="md:hidden flex">
+          <ThemeToggler />
+          <button
+            className="md:hidden text-gray-700 dark:text-gray-300"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <FaTimes /> : <FaBars />} {/* Menu icon */}
+          </button>
+        </div>
 
         {menuOpen && (
           <div className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-lg md:hidden">
@@ -121,10 +131,8 @@ const Navbar = () => {
                 placeholder="Search components..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="ml-4 p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+                className="p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
               />
-              {/* Theme Toggler for Mobile */}
-              <ThemeToggler />
             </div>
           </div>
         )}

@@ -8,12 +8,12 @@ const Footer = () => {
   return (
     <footer
       className={`py-6 ${
-        theme === "dark" ? "dark:bg-[#0A0A0A] border-t text-white" : "bg-white text-gray-800"
+        theme === "dark" ? "dark:bg-[#0A0A0A] border-t  dark:border-[#252525] border-[#EBEBEB]  text-white" : "bg-white text-gray-800"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center px-4">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
         {/* Navigation Links */}
-        <div className="flex space-x-4">
+        <div className="flex flex-wrap justify-center md:justify-start space-x-4 mt-4 md:mt-0">
           <Link
             to="/"
             className={`hover:${theme === "dark" ? "text-blue-400" : "text-blue-600"}`}
@@ -35,9 +35,9 @@ const Footer = () => {
         </div>
 
         {/* GitHub Link */}
-        <div>
+        <div className="mt-4 md:mt-0">
           <a
-            href="https://github.com/yourusername/sajiloui"
+            href="https://github.com/smrn001/Sajilo-UI"
             target="_blank"
             rel="noopener noreferrer"
             className={`flex items-center hover:${theme === "dark" ? "text-blue-400" : "text-blue-600"}`}

@@ -1,8 +1,42 @@
-# React + Vite
+# Sajilo UI 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sajilo UI is a collection of free Tailwind CSS components that can be used in your next project. With a range of components, you can build beautiful websites.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Components](#components)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Getting Started
+
+There is no installation required for Sajilo UI. If you have a Tailwind CSS project, you can simply copy the code and paste it into your project. Some components may have support for interactive features using vanilla JavaScript.
+
+## Usage
+
+1. Browse the website for the components you need.
+2. Click on the 'Copy' button to copy the source code.
+3. Paste the copied code into your project.
+
+## Components
+
+Sajilo UI offers a wide range of freely available components. These components include:
+
+- Header
+- Footer
+
+## Contributing
+
+You can contribute to Sajilo UI by adding new components, fixing bugs, or improving the documentation. Please create an issue before starting any work. Once you receive approval on your issue, you can create a new branch and submit your changes in a pull request (PR). Note that all PRs will need to be reviewed.
+
+For a detailed contributing guide on how to contribute, including examples of adding new components, please refer to the Sajilo UI documentation.
+
+## License
+
+Sajilo UI is an open-source project licensed under the MIT License.
+
+---
+
+Thank you for checking out Sajilo UI! We hope you find it useful for your projects. Happy coding!

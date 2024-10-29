@@ -17,7 +17,9 @@ const App = () => {
       <Navbar />
       <main className="min-h-screen">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />
+        
+        } />
           <Route path="/docs" element={<Docs />} />
           <Route path="/components" element={<Components />} />
           <Route path="/about" element={<About />} />
