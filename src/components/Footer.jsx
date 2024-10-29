@@ -1,35 +1,19 @@
 import { Link } from "react-router-dom"; // Use react-router-dom for navigation
 import { FaGithub } from "react-icons/fa"; // Import GitHub icon
-import { useTheme } from "./ThemeContext"; // Import the Theme context (assuming you have one)
 
 const Footer = () => {
-  const { theme } = useTheme(); // Access the current theme from context
-
   return (
-    <footer
-      className={`py-6 ${
-        theme === "dark" ? "dark:bg-[#0A0A0A] border-t  dark:border-[#252525] border-[#EBEBEB]  text-white" : "bg-white text-gray-800"
-      }`}
-    >
+    <footer className="py-6 bg-[#FAFAFA] border-t border-[#EBEBEB]  text-gray-800 dark:bg-[#0A0A0A] dark:border-[#252525] dark:text-white">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
         {/* Navigation Links */}
         <div className="flex flex-wrap justify-center md:justify-start space-x-4 mt-4 md:mt-0">
-          <Link
-            to="/"
-            className={`hover:${theme === "dark" ? "text-blue-400" : "text-blue-600"}`}
-          >
+          <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400">
             Home
           </Link>
-          <Link
-            to="/components"
-            className={`hover:${theme === "dark" ? "text-blue-400" : "text-blue-600"}`}
-          >
+          <Link to="/components" className="hover:text-blue-600 dark:hover:text-blue-400">
             Components
           </Link>
-          <Link
-            to="/docs"
-            className={`hover:${theme === "dark" ? "text-blue-400" : "text-blue-600"}`}
-          >
+          <Link to="/docs" className="hover:text-blue-600 dark:hover:text-blue-400">
             Docs
           </Link>
         </div>
@@ -40,7 +24,7 @@ const Footer = () => {
             href="https://github.com/smrn001/Sajilo-UI"
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center hover:${theme === "dark" ? "text-blue-400" : "text-blue-600"}`}
+            className="flex items-center hover:text-blue-600 dark:hover:text-blue-400"
           >
             <FaGithub className="mr-1" /> {/* GitHub Icon */}
             GitHub
