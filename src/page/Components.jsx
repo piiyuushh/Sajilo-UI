@@ -59,17 +59,17 @@ const componentsList = [
       "Information cards for displaying content in a visually appealing way.",
     link: "/components/cards",
   },
-  {
-    name: "Modals",
-    description: "Popup modals for displaying important information or forms.",
-    link: "/components/modals",
-  },
-  {
-    name: "Alerts",
-    description:
-      "Notification alerts to inform users of important actions or statuses.",
-    link: "/components/alerts",
-  },
+  // {
+  //   name: "Modals",
+  //   description: "Popup modals for displaying important information or forms.",
+  //   link: "/components/modals",
+  // },
+  // {
+  //   name: "Alerts",
+  //   description:
+  //     "Notification alerts to inform users of important actions or statuses.",
+  //   link: "/components/alerts",
+  // },
   // Add more components as needed
 ];
 

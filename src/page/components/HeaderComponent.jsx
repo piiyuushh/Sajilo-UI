@@ -5,7 +5,7 @@ const HeaderComponent = () => {
   const [menuOpen, setMenuOpen] = useState(false); // State to manage mobile menu visibility
 
   const code = `
-<header class="bg-white shadow-md">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#FAFAFA] dark:bg-[#0A0A0A] border-b dark:border-[#252525] border-[#EBEBEB]">
   <div class="container mx-auto flex justify-between items-center p-6">
     <h1 class="text-3xl font-bold text-gray-900">My App</h1>
     <nav>
@@ -27,7 +27,7 @@ const HeaderComponent = () => {
           </svg>
         </button>
       </div>
-      <ul class="hidden lg:flex space-x-6 text-gray-700">
+      <ul class="hidden lg:flex space-x-6 text-gray-700 dark:text-white">
         <li><a href="/" class="hover:text-blue-500 transition">Home</a></li>
         <li><a href="/about" class="hover:text-blue-500 transition">About</a></li>
         <li><a href="/services" class="hover:text-blue-500 transition">Services</a></li>
@@ -39,8 +39,8 @@ const HeaderComponent = () => {
   <div class="lg:hidden">
     <ul class="${
       menuOpen ? "block" : "hidden"
-    } text-gray-700 bg-white rounded-lg shadow-md absolute left-0 w-full">
-      <li><a href="/" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Home</a></li>
+    } text-gray-700 dark:text-white bg-white rounded-lg shadow-md absolute left-0 w-full">
+      <li><a href="/" class="block px-4 py-2 hover:bg-blue-500 hover:text-white ">Home</a></li>
       <li><a href="/about" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">About</a></li>
       <li><a href="/services" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Services</a></li>
       <li><a href="/contact" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Contact</a></li>
@@ -71,9 +71,9 @@ const HeaderComponent = () => {
       <h2 className="text-2xl font-semibold mt-8 mb-4">Preview</h2>
 
       <output>
-        <header className="bg-white shadow-md">
+        <header className=" bg-[#FAFAFA] dark:bg-[#0A0A0A] border-b dark:border-[#252525] border-[#EBEBEB]">
           <div className="container mx-auto flex justify-between items-center p-6">
-            <h1 className="text-3xl font-bold text-gray-900">My App</h1>
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white">My App</h1>
             <nav>
               <div className="block lg:hidden">
                 <button
@@ -96,7 +96,7 @@ const HeaderComponent = () => {
                   </svg>
                 </button>
               </div>
-              <ul className="hidden lg:flex space-x-6 text-gray-700">
+              <ul className="hidden lg:flex space-x-6 text-gray-700 dark:text-white">
                 <li>
                   <a href="#" className="hover:text-blue-500 transition">
                     Home
@@ -169,8 +169,8 @@ const HeaderComponent = () => {
       <div className="flex items-center mb-4">
         <button
           onClick={handleCopy}
-          className="flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition focus:outline-none"
-        >
+          className="px-6 py-2  flex rounded-lg font-semibold  bg-white text-black  dark:border-[#252525] border-[#EBEBEB] dark:bg-[#0A0A0A] border  dark:text-white"
+          >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5 mr-2"
@@ -188,13 +188,17 @@ const HeaderComponent = () => {
           Copy Code
         </button>
         {copySuccess && (
-          <span className="ml-4 text-green-500 font-semibold">
+          <span 
+          className="ml-4 text-green-500 font-semibold"
+          >
             {copySuccess}
           </span>
         )}
       </div>
 
-      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto">
+      <pre 
+      className="bg-[#FAFAFA] dark:bg-[#0A0A0A] border dark:border-[#252525] border-[#EBEBEB] p-4 rounded-lg overflow-x-auto"
+      >
         <code>{code}</code>
       </pre>
     </div>
