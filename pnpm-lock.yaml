@@ -15,37 +15,37 @@ importers:
         specifier: ^1.3.1
         version: 1.3.1
       '@headlessui/react':
-        specifier: ^2.1.8
+        specifier: ^2.2.0
         version: 2.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mdx-js/loader':
-        specifier: ^3.0.1
+        specifier: ^3.1.0
         version: 3.1.0(acorn@8.14.0)
       '@mdx-js/react':
-        specifier: ^3.0.1
+        specifier: ^3.1.0
         version: 3.1.0(@types/react@18.3.12)(react@18.3.1)
       '@motionone/utils':
         specifier: ^10.18.0
         version: 10.18.0
       '@next/mdx':
-        specifier: ^14.2.4
+        specifier: ^14.2.16
         version: 14.2.16(@mdx-js/loader@3.1.0(acorn@8.14.0))(@mdx-js/react@3.1.0(@types/react@18.3.12)(react@18.3.1))
       '@prisma/client':
-        specifier: ^5.19.1
+        specifier: ^5.21.1
         version: 5.21.1
       '@radix-ui/react-aspect-ratio':
         specifier: ^1.1.0
         version: 1.1.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-dialog':
-        specifier: ^1.1.1
+        specifier: ^1.1.2
         version: 1.1.2(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-dropdown-menu':
-        specifier: ^2.1.1
+        specifier: ^2.1.2
         version: 2.1.2(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-navigation-menu':
         specifier: ^1.2.1
         version: 1.2.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-scroll-area':
-        specifier: ^1.1.0
+        specifier: ^1.2.0
         version: 1.2.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-select':
         specifier: ^2.1.2
@@ -54,10 +54,10 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(@types/react@18.3.12)(react@18.3.1)
       '@radix-ui/react-tabs':
-        specifier: ^1.1.0
+        specifier: ^1.1.1
         version: 1.1.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-tooltip':
-        specifier: ^1.1.2
+        specifier: ^1.1.3
         version: 1.1.3(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/bcryptjs':
         specifier: ^2.4.6
@@ -78,19 +78,19 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       codehike:
-        specifier: ^1.0.1
+        specifier: ^1.0.4
         version: 1.0.4
       embla-carousel:
-        specifier: ^8.3.0
+        specifier: ^8.3.1
         version: 8.3.1
       embla-carousel-autoplay:
-        specifier: ^8.3.0
+        specifier: ^8.3.1
         version: 8.3.1(embla-carousel@8.3.1)
       embla-carousel-class-names:
-        specifier: ^8.3.0
+        specifier: ^8.3.1
         version: 8.3.1(embla-carousel@8.3.1)
       embla-carousel-react:
-        specifier: ^8.3.0
+        specifier: ^8.3.1
         version: 8.3.1(react@18.3.1)
       framer-motion:
         specifier: ^11.11.10
@@ -126,16 +126,16 @@ importers:
         specifier: ^2.3.1
         version: 2.3.1
       react:
-        specifier: ^18
+        specifier: ^18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18
+        specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-icons:
         specifier: ^5.3.0
         version: 5.3.0(react@18.3.1)
       react-resizable-panels:
-        specifier: ^2.1.3
+        specifier: ^2.1.6
         version: 2.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-scroll:
         specifier: ^1.9.0
@@ -153,7 +153,7 @@ importers:
         specifier: ^11.0.0
         version: 11.0.0
       tailwind-merge:
-        specifier: ^2.3.0
+        specifier: ^2.5.4
         version: 2.5.4
       unified:
         specifier: ^11.0.5
@@ -165,7 +165,7 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       vaul:
-        specifier: ^1.0.0
+        specifier: ^1.1.1
         version: 1.1.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       zod:
         specifier: ^3.23.8
@@ -184,37 +184,37 @@ importers:
         specifier: ^4.0.4
         version: 4.0.4
       '@types/node':
-        specifier: ^20
+        specifier: ^20.17.3
         version: 20.17.3
       '@types/react':
-        specifier: ^18
+        specifier: ^18.3.12
         version: 18.3.12
       '@types/react-dom':
-        specifier: ^18
+        specifier: ^18.3.1
         version: 18.3.1
       '@types/unist':
         specifier: ^3.0.3
         version: 3.0.3
       eslint:
-        specifier: ^8
+        specifier: ^8.57.1
         version: 8.57.1
       eslint-config-next:
         specifier: 14.2.4
         version: 14.2.4(eslint@8.57.1)(typescript@5.6.3)
       postcss:
-        specifier: ^8
+        specifier: ^8.4.47
         version: 8.4.47
       prettier-plugin-tailwindcss:
-        specifier: ^0.6.5
+        specifier: ^0.6.8
         version: 0.6.8(prettier@3.3.3)
       tailwindcss:
-        specifier: ^3.4.6
+        specifier: ^3.4.14
         version: 3.4.14(ts-node@10.9.2(@types/node@20.17.3)(typescript@5.6.3))
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@20.17.3)(typescript@5.6.3)
       typescript:
-        specifier: ^5
+        specifier: ^5.6.3
         version: 5.6.3
 
 packages:
