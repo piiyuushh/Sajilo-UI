@@ -46,6 +46,15 @@
           "parentlink": "navbar",
           "parentName": "navbar"
         }
+,
+        {
+          "componentName": "navbarcomponent3",
+          "filesrc": "components/navbar/piyush.tsx",
+          "iframeSrc": "live-components/navbarcomponent3",
+          "parentlink": "navbar",
+          "parentName": "navbar"
+        }
+        
       ],
       "type": "hello"
     },
