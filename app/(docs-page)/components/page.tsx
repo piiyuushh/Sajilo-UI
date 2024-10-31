@@ -1,6 +1,4 @@
 'use client';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import * as AspectRatio from '@radix-ui/react-aspect-ratio';
 import Image from 'next/image';
@@ -12,10 +10,16 @@ const appsDesign = [
     name: 'buttons',
     imgSrc: preview.buttons,
   },
+  {
+    id: 'navbar',
+    url: '/components/navbar',
+    name: 'navbar',
+    imgSrc: preview.navbar,
+  },
 
   {
-    id: 'image-reveal',
-    url: '/components/product-cards',
+    id: 'cards',
+    url: '/components/card',
     name: 'Cards',
     imgSrc: preview.card,
   },

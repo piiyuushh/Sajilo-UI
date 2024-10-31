@@ -4,6 +4,7 @@ import buttons from '@/assets/preview/buttons.svg';
 import motionNumber from '@/assets/preview/motion-number.svg';
 import clippath from '@/assets/preview/clip-path.svg';
 import hello from '@/assets/preview/hello.svg';
+import navbar from '@/assets/preview/navbar.svg';
 const preview = {
   horizontascroll,
   motionNumber,
@@ -11,5 +12,6 @@ const preview = {
   buttons,
   card,
   hello,
+  navbar,
 };
 export default preview;
