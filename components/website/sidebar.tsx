@@ -8,7 +8,9 @@ import { IRecentPage, useRecentPagesStore } from '@/hooks/useZustStore';
 import docsData from '@/configs/docs.json' assert { type: 'json' };
 import { useTheme } from 'next-themes';
 import { generateSidebarData } from './constant';
-import { MainComponents, SpecialComponents } from '@/configs/docs';
+// import { MainComponents, SpecialComponents } from '@/configs/docs';
+import {  SpecialComponents } from '@/configs/docs';
+
 import {
   Tooltip,
   TooltipProvider,
@@ -38,17 +40,17 @@ function DocsSidebar() {
   const { addVisitedPage, getRecentPages, removeAllRecentPages } =
     useRecentPagesStore();
   const [recentPages, setRecentPages] = useState<IRecentPage[]>([]);
-  const groupedComponents = MainComponents.reduce((acc, component) => {
-    const group = component.component || null;
-    //@ts-ignore
-    if (!acc[group]) {
-      //@ts-ignore
-      acc[group] = [];
-    }
-    //@ts-ignore
-    acc[group].push(component);
-    return acc;
-  }, {});
+  // const groupedComponents = MainComponents.reduce((acc, component) => {
+  //   const group = component.component || null;
+  //   //@ts-ignore
+  //   if (!acc[group]) {
+  //     //@ts-ignore
+  //     acc[group] = [];
+  //   }
+  //   //@ts-ignore
+  //   acc[group].push(component);
+  //   return acc;
+  // }, {});
 
   const handleRemoveAllRecentData = () => {
     setRecentPages([]);
@@ -173,7 +175,7 @@ function DocsSidebar() {
                   </>
                 );
               })}
-              {Object.entries(groupedComponents).map(
+              {/* {Object.entries(groupedComponents).map(
                 ([group, items], index) => (
                   <ItemsWithName
                     group={group}
@@ -183,7 +185,7 @@ function DocsSidebar() {
                     addVisitedPage={addVisitedPage}
                   />
                 )
-              )}
+              )} */}
             </ScrollArea>
           </div>
         </aside>

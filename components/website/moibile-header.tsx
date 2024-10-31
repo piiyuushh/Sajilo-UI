@@ -5,7 +5,9 @@ import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { SidebarDrawer, DrawerContent } from '../core/drawer/vaul-sidebar';
 import { basePath } from './sidebar';
-import { MainComponents, SpecialComponents } from '@/configs/docs';
+import { SpecialComponents } from '@/configs/docs';
+// import { MainComponents, SpecialComponents } from '@/configs/docs';
+
 import { cn } from '@/lib/utils';
 import { VscSymbolInterface } from 'react-icons/vsc';
 
@@ -104,7 +106,9 @@ function MobileHeader({ classname }: { classname?: string }) {
             </ul>
             <h1 className='text-sm font-semibold pb-1'>Components</h1>
             <ul>
-              {[...MainComponents, ...SpecialComponents]?.map((link) => {
+              {[...SpecialComponents]?.map((link) => {
+                // {[...MainComponents, ...SpecialComponents]?.map((link) => {
+
                 return (
                   <>
                     <li>

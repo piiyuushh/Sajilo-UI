@@ -18,14 +18,18 @@ import { generateSidebarData } from './constant';
 import docsData from '@/configs/docs.json' assert { type: 'json' };
 import { cn } from '@/lib/utils';
 import { basePath } from './sidebar';
-import { MainComponents, SpecialComponents } from '@/configs/docs';
+import {  SpecialComponents } from '@/configs/docs';
+// import { MainComponents, SpecialComponents } from '@/configs/docs';
+
 
 // import { componentsArr } from './sidebar';
 
 export function SearchDialog({ classname }: { classname?: string }) {
   const router = useRouter();
   const { setTheme } = useTheme();
-  const searchbardata = [...basePath, ...SpecialComponents, ...MainComponents];
+  const searchbardata = [...basePath, ...SpecialComponents];
+  // const searchbardata = [...basePath, ...SpecialComponents, ...MainComponents];
+
   console.log(searchbardata);
 
   const [searchOpen, setSearchOpen] = React.useState(false);

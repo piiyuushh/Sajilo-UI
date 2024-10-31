@@ -186,7 +186,7 @@ export default function ComponentPreview({
       ) : (
         <>
           <div
-            className={`${isFitheight ? 'h-fit' : 'xl:h-[600px] h-fit overflow-auto'} w-full rounded-lg dark:bg-[#080b11] bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:20px_20px] overflow-hidden pt-8 p-8`}
+            className={`${isFitheight ? 'h-fit' : 'h-fit overflow-auto'} w-full rounded-lg dark:bg-[#080b11] bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:20px_20px] overflow-hidden pt-8 p-8`}
           >
             <div
               className='h-full  mx-auto p-5 not-prose'

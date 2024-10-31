@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { FaGithub, FaBars, FaTimes } from 'react-icons/fa';
 import { VscSymbolInterface } from 'react-icons/vsc';
 

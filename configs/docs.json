@@ -13,6 +13,19 @@
       ],
       "type": "demo"
     },
+    {
+      "name": "card",
+      "componentArray": [
+        {
+          "componentName": "cardcomponent",
+          "filesrc": "components/card/projects-card.tsx",
+          "iframeSrc": "live-components/cartcomponent",
+          "parentlink": "cart",
+          "parentName": "cart"
+        }
+      ],
+      "type": "cart"
+    },
     
     {
       "name": "footer",
@@ -108,26 +121,7 @@
       "type": "buttons"
     },
    
-    {
-      "name": "Product Cards",
-      "componentArray": [
-        {
-          "componentName": "productcard1",
-          "filesrc": "components/card/product-card1.tsx",
-          "iframeSrc": "live-components/productcard1",
-          "parentlink": "product-cards",
-          "parentName": "Product Cards"
-        },
-        {
-          "componentName": "productcard2",
-          "filesrc": "components/card/product-card2.tsx",
-          "iframeSrc": "live-components/productcard2",
-          "parentlink": "product-cards",
-          "parentName": "Product Cards"
-        }
-      ],
-      "type": "card"
-    },
+  
     
    
     {
