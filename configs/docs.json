@@ -49,6 +49,13 @@
           "iframeSrc": "live-components/cartcomponent",
           "parentlink": "cart",
           "parentName": "cart"
+        },
+        {
+          "componentName": "cardcomponent2",
+          "filesrc": "components/card/team-card.tsx",
+          "iframeSrc": "live-components/cartcomponent2",
+          "parentlink": "cart",
+          "parentName": "cart"
         }
       ],
       "type": "cart"

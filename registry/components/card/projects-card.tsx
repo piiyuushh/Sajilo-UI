@@ -22,29 +22,6 @@ const projects = [
     code: '#',
     preview: 'https://blog-np.vercel.app',
   },
-  {
-    name: 'Note website',
-    description: 'A website for CSIT notes',
-    tech: ['HTML', 'CSS', 'G-Drive-Api'],
-    code: 'https://github.com/smrn001/noteSharing',
-    preview: 'https://csitn.netlify.app',
-  },
-
-  {
-    name: 'Web-IDE',
-    description: 'A web IDE to edit and run code on the web ',
-    tech: ['Tailwind', 'JavaScript', 'monaco'],
-    code: 'https://github.com/smrn001/code',
-    preview: 'https://code.samirn.com.np/',
-  },
-
-  {
-    name: 'Gallery ',
-    description: ' Personal photographs colleection',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    code: '#',
-    preview: 'https://gallery.samirn.com.np/',
-  },
 ];
 const Projects = () => {
   return (

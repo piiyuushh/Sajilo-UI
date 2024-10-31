@@ -10,7 +10,7 @@ export const SpecialComponents = [
   { href: '/components/footers', name: 'Footers' },
   {
     href: '/components/demo',
-    name: 'Demo Components',
+    name: 'Demo ',
   },
   {
     href: '/components/bentogrid',
@@ -23,7 +23,7 @@ export const SpecialComponents = [
 
   {
     href: '/components/navbar',
-    name: 'Navbar Components',
+    name: 'Navbar ',
     new: true,
   },
 ];
