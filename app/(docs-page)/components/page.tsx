@@ -5,10 +5,16 @@ import Image from 'next/image';
 import preview from '@/assets/preview';
 const appsDesign = [
   {
-    id: 'buttons',
-    url: '/components/buttons',
-    name: 'buttons',
-    imgSrc: preview.buttons,
+    id: 'bentogrid',
+    url: '/components/bentogrid',
+    name: 'bentogrid',
+    imgSrc: preview.bentogrid,
+  },
+  {
+    id: 'form',
+    url: '/components/form',
+    name: 'form',
+    imgSrc: preview.form,
   },
   {
     id: 'navbar',
@@ -22,6 +28,12 @@ const appsDesign = [
     url: '/components/card',
     name: 'Cards',
     imgSrc: preview.card,
+  },
+  {
+    id: 'hero',
+    url: '/components/hero',
+    name: 'Hero Section',
+    imgSrc: preview.hero,
   },
 ];
 

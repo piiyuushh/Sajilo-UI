@@ -1,6 +1,5 @@
 export const SpecialComponents = [
   { href: '/components/bentogrid', name: 'Bento Grid ' },
-  { href: '/components/buttons', name: 'Buttons' },
   { href: '/components/card', name: 'Cards ', new: true },
   { href: '/components/demo', name: 'Demo ' },
   { href: '/components/footers', name: 'Footers' },
