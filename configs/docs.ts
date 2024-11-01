@@ -12,6 +12,8 @@ export const SpecialComponents = [
   { href: '/components/error', name: 'Error ' },
   { href: '/components/modal', name: 'Modal ' },
   { href: '/components/price', name: 'Price ' },
+  { href: '/components/drawer', name: 'Drawer ' },
+
 
 ];
 
