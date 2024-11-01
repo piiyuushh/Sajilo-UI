@@ -1,22 +1,19 @@
 export const SpecialComponents = [
-  { href: '/components/bentogrid', name: 'Bento Grid ' },
-  { href: '/components/card', name: 'Cards ', new: true },
-  { href: '/components/carousel', name: 'Carousel ' },
-  { href: '/components/demo', name: 'Demo ' },
+  { href: '/components/bentogrid', name: 'Bento Grid' },
+  { href: '/components/card', name: 'Cards'},
+  { href: '/components/carousel', name: 'Carousel' },
+  { href: '/components/demo', name: 'Demo' },
+  { href: '/components/drawer', name: 'Drawer' },
+  { href: '/components/error', name: 'Error' },
   { href: '/components/footers', name: 'Footers' },
-  { href: '/components/form', name: 'Form ' },
+  { href: '/components/form', name: 'Form' },
   { href: '/components/hero', name: 'Hero Section' },
+  { href: '/components/modal', name: 'Modal' },
+  { href: '/components/navbar', name: 'Navbar', new: true },
   { href: '/components/parallax', name: 'Parallax' },
-  { href: '/components/navbar', name: 'Navbar ', new: true },
-  { href: '/components/table', name: 'Table ' },
-  { href: '/components/error', name: 'Error ' },
-  { href: '/components/modal', name: 'Modal ' },
-  { href: '/components/price', name: 'Price ' },
-  { href: '/components/drawer', name: 'Drawer ' },
-
-
+  { href: '/components/price', name: 'Price' },
+  { href: '/components/table', name: 'Table' },
 ];
-
 // export const MainComponents = [
 //   {
 //     href: '/components/blur-vignette',
