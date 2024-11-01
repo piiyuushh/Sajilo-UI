@@ -22,11 +22,11 @@ const ParallaxComponent = () => {
   return (
     <div>
       <section className='w-full bg-[url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fGFwcGxlJTIwcGFyYWxsbGVsfGVufDB8fHx8MTY3NzY2Mzc2NA&ixlib=rb-1.2.1&q=80&w=1080")] md:py-52 py-28 bg-cover bg-center my-20 border bg-fixed bg-no-repeat'>
-        <h1 className='text-center text-white text-5xl font-bold'>
-          lorem ipsum dolor sit amet
+        <h1 className='text-center text-white text-4xl md:text-5xl font-bold'>
+          Lorem ipsum dolor sit amet
         </h1>
         <p className='mt-4 text-center text-lg text-white'>
-          loream ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
           odio. Praesent libero.
         </p>
       </section>
@@ -41,10 +41,10 @@ const ParallaxComponent = () => {
         </div>
 
         <div className='py-3 px-2'>
-          <h1 className='text-5xl mb-8 text-gray-800'>
-            Lorem ipsum dolor sit amet{' '}
+          <h1 className='text-4xl md:text-5xl mb-8 text-gray-800 dark:text-white'>
+            Lorem ipsum dolor sit amet
           </h1>
-          <p className='text-md text-gray-600'>
+          <p className='text-md text-gray-600 dark:text-gray-300'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Praesent libero. Sed cursus ante dapibus diam.
             <br />
