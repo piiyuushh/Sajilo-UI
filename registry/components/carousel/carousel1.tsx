@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 
 // Array of images from placeholder.com

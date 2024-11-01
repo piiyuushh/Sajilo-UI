@@ -6,6 +6,7 @@ export const SpecialComponents = [
   { href: '/components/footers', name: 'Footers' },
   { href: '/components/form', name: 'Form ' },
   { href: '/components/hero', name: 'Hero Section' },
+  { href: '/components/parallax', name: 'Parallax' },
   { href: '/components/navbar', name: 'Navbar ', new: true },
 ];
 

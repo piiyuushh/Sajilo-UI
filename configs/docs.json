@@ -14,6 +14,19 @@
       "type": "demo"
     },
     {
+      "name": "parallax",
+      "componentArray": [
+        {
+          "componentName": "parallaxcomponent",
+          "filesrc": "components/parallax/parallax.tsx",
+          "iframeSrc": "live-components/parallaxcomponent",
+          "parentlink": "parallax",
+          "parentName": "parallax"
+        }
+      ],
+      "type": "parallax"
+    },
+    {
       "name": "carousel",
       "componentArray": [
         {
