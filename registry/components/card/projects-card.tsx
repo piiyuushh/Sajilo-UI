@@ -2,25 +2,25 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 const projects = [
   {
-    name: 'JYNX website',
-    description: 'A website for JYNX digital marketing Agency',
+    name: 'loreum Ipsum',
+    description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit',
     tech: ['React', 'Tailwind'],
     code: '#',
-    preview: 'https://jynx.netlify.app/',
+    preview: '#',
   },
   {
-    name: 'Alwin Portfolio',
-    description: 'A portfolio website for Graphic Designer',
+    name: 'loreum Ipsum',
+    description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit',
     tech: ['Next JS', 'Tailwind'],
     code: '#',
-    preview: 'https://alwinbhandari.vercel.app',
+    preview: '#',
   },
   {
-    name: 'NP Blog',
-    description: 'A blog website for Nepali bloggers ',
+    name: 'loreum Ipsum',
+    description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit',
     tech: ['Next JS', 'Tailwind', 'shadcn/ui'],
     code: '#',
-    preview: 'https://blog-np.vercel.app',
+    preview: '#',
   },
 ];
 const Projects = () => {

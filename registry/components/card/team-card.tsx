@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 
 const teamMembers = [
   {
-    name: 'Alwin Bhandari',
+    name: 'loreum Ipsum',
     role: 'Graphics Designer, Video Editor',
-    imgSrc: 'https://placehold.co/150x150',
+    imgSrc:
+      'https://images.unsplash.com/photo-1618937995753-94fe3bd8375c?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     socialLinks: [
       {
-        href: 'https://www.facebook.com/hero.keto.1447',
+        href: '#',
         icon: <FaFacebookF className='text-blue-600' />,
       },
       {
@@ -16,37 +17,19 @@ const teamMembers = [
         icon: <FaInstagram className='text-pink-500' />,
       },
       {
-        href: 'https://github.com/Alwin203',
+        href: '#',
         icon: <FaGithub className='text-gray-300' />,
       },
     ],
   },
   {
-    name: 'Samir Niroula',
+    name: 'loreum Ipsum',
     role: 'Web Developer, Photographer',
-    imgSrc: 'https://placehold.co/150x150',
+    imgSrc:
+      'https://images.unsplash.com/photo-1618937995753-94fe3bd8375c?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     socialLinks: [
       {
-        href: 'https://www.facebook.com/samirn.com.np',
-        icon: <FaFacebookF className='text-blue-600' />,
-      },
-      {
-        href: 'https://www.instagram.com/samirn.me/',
-        icon: <FaInstagram className='text-pink-500' />,
-      },
-      {
-        href: 'https://github.com/smrn001',
-        icon: <FaGithub className='text-gray-300' />,
-      },
-    ],
-  },
-  {
-    name: 'Prabin Thakur',
-    role: 'Data Scientist , Marketing Manager',
-    imgSrc: 'https://placehold.co/150x150',
-    socialLinks: [
-      {
-        href: 'https://www.facebook.com/prabin.thakur.148',
+        href: '#',
         icon: <FaFacebookF className='text-blue-600' />,
       },
       {
@@ -54,26 +37,47 @@ const teamMembers = [
         icon: <FaInstagram className='text-pink-500' />,
       },
       {
-        href: 'https://github.com/pluto-111',
+        href: '#',
         icon: <FaGithub className='text-gray-300' />,
       },
     ],
   },
   {
-    name: 'Piyush Karn',
-    role: 'Web Developer, Videographer',
-    imgSrc: 'https://placehold.co/150x150',
+    name: 'loreum Ipsum',
+    role: 'Data Scientist , Marketing Manager',
+    imgSrc:
+      'https://images.unsplash.com/photo-1618937995753-94fe3bd8375c?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     socialLinks: [
       {
-        href: 'https://www.facebook.com/piyush.karn.313',
+        href: '#',
         icon: <FaFacebookF className='text-blue-600' />,
       },
       {
-        href: 'https://www.instagram.com/piyushkarn87/',
+        href: '#',
         icon: <FaInstagram className='text-pink-500' />,
       },
       {
-        href: 'https://github.com/piiyuushh',
+        href: '#',
+        icon: <FaGithub className='text-gray-300' />,
+      },
+    ],
+  },
+  {
+    name: 'loreum Ipsum',
+    role: 'Web Developer, Videographer',
+    imgSrc:
+      'https://images.unsplash.com/photo-1618937995753-94fe3bd8375c?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    socialLinks: [
+      {
+        href: '#',
+        icon: <FaFacebookF className='text-blue-600' />,
+      },
+      {
+        href: '#',
+        icon: <FaInstagram className='text-pink-500' />,
+      },
+      {
+        href: '#',
         icon: <FaGithub className='text-gray-300' />,
       },
     ],
@@ -94,7 +98,7 @@ const TeamMemberCard = ({ member }: { member: TeamMember }) => (
     <img
       src={member.imgSrc}
       alt={member.name}
-      className='rounded-full w-24 h-24 md:w-20 md:h-20 mx-auto mb-4'
+      className='rounded-full object-cover w-24 h-24 md:w-20 md:h-20 mx-auto mb-4'
     />
     <h3 className='text-lg md:text-xl font-medium text-center'>
       {member.name}
