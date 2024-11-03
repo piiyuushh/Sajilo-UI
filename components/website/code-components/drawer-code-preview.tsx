@@ -6,12 +6,8 @@ import {
   TabsTrigger,
 } from '@/components/website/ui/tabs';
 import docs from '@/configs/docs.json';
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-} from '@/components/website/ui/dialog';
-import { Pre, RawCode, highlight } from 'codehike/code';
+
+import { Pre, highlight } from 'codehike/code';
 
 import {
   DrawerContent,
