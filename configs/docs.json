@@ -13,7 +13,19 @@
       ],
       "type": "demo"
     },
-
+    {
+      "name": "marquee",
+      "componentArray": [
+        {
+          "componentName": "marqueecomponent",
+          "filesrc": "components/marquee/brand.tsx",
+          "iframeSrc": "live-components/marqueecomponent",
+          "parentlink": "marquee",
+          "parentName": "marquee"
+        }
+      ],
+      "type": "marquee"
+    },
     {
       "name": "breadcrumb",
       "componentArray": [

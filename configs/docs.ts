@@ -10,6 +10,7 @@ export const SpecialComponents = [
   { href: '/components/footers', name: 'Footers' },
   { href: '/components/form', name: 'Form' },
   { href: '/components/hero', name: 'Hero Section' },
+  { href: '/components/marquee', name: 'marquee', new: true },
   { href: '/components/modal', name: 'Modal', new: true },
   { href: '/components/navbar', name: 'Navbar' },
   { href: '/components/parallax', name: 'Parallax' },
