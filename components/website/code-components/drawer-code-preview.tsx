@@ -75,7 +75,7 @@ export default async function DrawerCodePreview({
   if (!currComponent) {
     return <div>Component not found</div>;
   }
-  console.log(currComponent);
+  // console.log(currComponent);
 
   // console.log('childer', children);
 

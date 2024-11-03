@@ -30,7 +30,7 @@ export function SearchDialog({ classname }: { classname?: string }) {
   const searchbardata = [...basePath, ...SpecialComponents];
   // const searchbardata = [...basePath, ...SpecialComponents, ...MainComponents];
 
-  console.log(searchbardata);
+  // console.log(searchbardata);
 
   const [searchOpen, setSearchOpen] = React.useState(false);
   React.useEffect(() => {
