@@ -1,5 +1,6 @@
 export const SpecialComponents = [
   { href: '/components/bentogrid', name: 'Bento Grid' },
+  { href: '/components/bottom', name: 'Bottom Navbar', new: true },
   { href: '/components/card', name: 'Cards'},
   { href: '/components/carousel', name: 'Carousel' },
   { href: '/components/demo', name: 'Demo' },
@@ -13,7 +14,6 @@ export const SpecialComponents = [
   { href: '/components/parallax', name: 'Parallax' },
   { href: '/components/price', name: 'Price' },
   { href: '/components/table', name: 'Table' },
-  { href: '/components/bottom', name: 'Bottom Navbar', new: true },
 
 ];
 // export const MainComponents = [
@@ -23,7 +23,7 @@ export const SpecialComponents = [
 
 //     component: 'creative',
 //   },
-
+// piyush ko push  
 //   {
 //     href: '/components/motion-number',
 //     name: 'Motion Number',
