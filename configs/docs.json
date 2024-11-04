@@ -77,6 +77,13 @@
           "iframeSrc": "live-components/bottomcomponent2",
           "parentlink": "bottom",
           "parentName": "bottom"
+        },
+        {
+          "componentName": "bottomcomponent3",
+          "filesrc": "components/bottom/macbookdock.tsx",
+          "iframeSrc": "live-components/bottomcomponent3",
+          "parentlink": "bottom",
+          "parentName": "bottom"
         }
       ],
       "type": "bottom"
