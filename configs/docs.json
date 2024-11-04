@@ -70,6 +70,13 @@
           "iframeSrc": "live-components/bottomcomponent",
           "parentlink": "bottom",
           "parentName": "bottom"
+        },
+        {
+          "componentName": "bottomcomponent2",
+          "filesrc": "components/bottom/dock.tsx",
+          "iframeSrc": "live-components/bottomcomponent2",
+          "parentlink": "bottom",
+          "parentName": "bottom"
         }
       ],
       "type": "bottom"
