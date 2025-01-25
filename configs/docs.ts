@@ -15,6 +15,7 @@ export const SpecialComponents = [
   { href: '/components/navbar', name: 'Navbar' },
   { href: '/components/parallax', name: 'Parallax' },
   { href: '/components/price', name: 'Price' },
+  { href: '/components/skeletonLoader', name: 'Skeleton Loader' },
   { href: '/components/table', name: 'Table' },
   { href: '/components/notification', name: 'Toast '},
 ];

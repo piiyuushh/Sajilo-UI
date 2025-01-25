@@ -14,6 +14,19 @@
       "type": "demo"
     },
     {
+      "name": "Skeleton Loader",
+      "componentArray": [
+        {
+          "componentName": "skeletonLoaderComponent",
+          "filesrc": "components/skeletonLoader/skeletonLoader.tsx",
+          "iframeSrc": "live-components/skeletonLoaderComponent",
+          "parentlink": "skeleton",
+          "parentName": "skeleton"
+        }
+      ],
+      "type": "skeleton"
+    },
+    {
       "name": "marquee",
       "componentArray": [
         {
