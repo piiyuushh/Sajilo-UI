@@ -6,11 +6,16 @@ import remarkGfm from 'remark-gfm';
 import createMDX from '@next/mdx';
 import { remarkCodeHike, recmaCodeHike } from 'codehike/mdx';
 import rehypeSlug from 'rehype-slug';
+import withBundleAnalyzer from '@next/bundle-analyzer';
+
 // Import the JSON file
 import docsData from './configs/docs.json' with { type: 'json' };
-// import dataArray from './configs/docs';
 
 const { dataArray } = docsData;
+
+const bundleAnalyzer = withBundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+});
 
 const chConfig = {
   components: { code: 'PreCode' },
@@ -162,6 +167,16 @@ const withMDX = createMDX({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+  experimental: {
+    optimizePackageImports: [
+      'lucide-react',
+      'framer-motion',
+      '@radix-ui/react-icons',
+    ],
+  },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
   images: {
     remotePatterns: [
       {
@@ -180,8 +195,12 @@ const nextConfig = {
         hostname: 'img.freepik.com',
       },
     ],
+    formats: ['image/avif', 'image/webp'],
+    minimumCacheTTL: 31536000,
   },
+  poweredByHeader: false,
+  compress: true,
   // Add other Next.js config options here
 };
 
-export default withMDX(nextConfig);
+export default bundleAnalyzer(withMDX(nextConfig));

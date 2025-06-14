@@ -1,16 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-  overflow-x: hidden;
+
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  font-variant-ligatures: none;
+  text-rendering: optimizeSpeed;
+}
+
+/* Smooth scrolling with GPU acceleration */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  scrollbar-gutter: stable;
+  scrollbar-color: var(--scrollbar-color) transparent;
+  scrollbar-width: thin;
+}
+
+/* Enhanced custom scrollbar */
 :root {
   --scrollbar-color: rgba(0, 0, 0, 0.3);
 }
 
 :root.dark {
   --scrollbar-color: rgba(255, 255, 255, 0.3);
+}
+
+/* GPU-accelerated animations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 @layer base {
   :root {

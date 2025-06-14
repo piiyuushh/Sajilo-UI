@@ -1,13 +1,15 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/website/theme-provider';
 import Progressbar from '@/lib/progressbar';
 import { siteConfig } from '@/lib/utils';
 
-const poppins = Poppins({
+// Optimize font loading
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['200', '300', '400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
@@ -22,18 +24,13 @@ export const metadata: Metadata = {
     'React',
     'Tailwind CSS',
     'framer-motion',
-    'gsap',
-    'lenis react',
-    'reactscroll animation',
-    'web animation',
-    'design engineer',
-    'image mousetrail',
-    'spotlight',
-    'tabs',
-    'image reveal',
-    'sparkles',
+    'UI Components',
+    'Design System',
+    'Premium Components',
+    'Modern UI',
   ],
-
+  authors: [{ name: 'Sajilo UI Team' }],
+  creator: 'Sajilo UI',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -41,32 +38,63 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og.jpg`,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
-
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [`${siteConfig.url}/og.jpg`],
+  },
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
-  // manifest: `${siteConfig.url}/site.webmanifest`,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
-export default async function RootLayout({
+
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <html lang='en' suppressHydrationWarning>
-        <body className={poppins.className} suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning>
+      <head>
+        <link rel='preconnect' href='https://images.unsplash.com' />
+        <link rel='dns-prefetch' href='https://images.unsplash.com' />
+      </head>
+      <body className={inter.className} suppressHydrationWarning>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
           <Progressbar>
-            <ThemeProvider attribute='class'>
-              <div className='isolate min-h-screen' vaul-drawer-wrapper=''>
-                {children}
-              </div>
-            </ThemeProvider>
+            <div className='isolate min-h-screen' vaul-drawer-wrapper=''>
+              {children}
+            </div>
           </Progressbar>
-        </body>
-      </html>
-    </>
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }
