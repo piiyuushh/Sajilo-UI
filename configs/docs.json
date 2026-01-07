@@ -348,6 +348,19 @@
         }
       ],
       "type": "compliance-dashboard"
+    },
+    {
+      "name": "New Arrival",
+      "componentArray": [
+        {
+          "componentName": "newarrivalcomponent",
+          "filesrc": "components/newarrival/arrival.tsx",
+          "iframeSrc": "live-components/newarrivalcomponent",
+          "parentlink": "newarrival",
+          "parentName": "newarrival"
+        }
+      ],
+      "type": "new-arrival"
     }
   ]
 }

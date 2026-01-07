@@ -174,9 +174,7 @@ const nextConfig = {
       '@radix-ui/react-icons',
     ],
   },
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
-  },
+  transpilePackages: ['next-mdx-remote'],
   images: {
     remotePatterns: [
       {
