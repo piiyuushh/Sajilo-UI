@@ -14,6 +14,7 @@ export const SpecialComponents = [
   { href: '/components/marquee', name: 'marquee', new: true },
   { href: '/components/modal', name: 'Modal' },
   { href: '/components/navbar', name: 'Navbar' },
+  { href: '/components/newarrival', name: 'New Arrival', new: true },
   { href: '/components/parallax', name: 'Parallax' },
   { href: '/components/price', name: 'Price' },
   { href: '/components/risk-dashboard', name: 'Risk Dashboard', new: true },
