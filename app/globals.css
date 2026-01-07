@@ -228,3 +228,13 @@ tbody {
   initial-value: 0deg;
   syntax: '<angle>';
 }
+
+/* Animated shader background float animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
